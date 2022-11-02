@@ -13,6 +13,7 @@
 #            Thrill seeking items          (thrill; sequence of: defaults to items 21-25)
 # Output: Summary score for each sub-scale, joyexp, depsen, stress, social, thrill in that order
 # Use: df[,x1:x5] <- recodeFDC(x = df[,x1:x25], args)
+
 recodeFDC <- function(x, joyexp = c(1,2,3,4,5),
                          depsen = c(6,7,8,9,10),
                          stress = c(11,12,13,14,15),

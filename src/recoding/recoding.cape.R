@@ -14,6 +14,7 @@
 # Output: Summary score for each sub-scale (pos, neg, dep), and control items, in that order
 # Use: df[,x1:x4] <- recodeCAPE(x = df[,x1:x45], args)
 # If no control items, adjust accordingly, df[,x1:x3] (one less) <- recodeCAPE(df[,x1:x42]) (3 less)
+
 recodeCAPE <- function(x, pos = c(2,5,6,7,10,11,13,15,17,20,23,25,27,29,31,33,35,36,44,45),
                           neg = c(3,4,8,16,18,22,24,26,28,30,34,37,38,39),
                           dep = c(1,9,12,14,19,40,41,42),

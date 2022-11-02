@@ -3,15 +3,16 @@
 # Kristoffer Klevjer - github.com/klvr - klevjer(a)gmail.com                                       #
 ####################################################################################################
 
-# 17-item Dynamic / titration variant of Ellsberg paradow ------------------------------------------
+# 17-item Dynamic / titration variant of Ellsberg paradox ------------------------------------------
 # Input: Columns of responses (x)
 # Arguments: Output in percentage (perc) or bipolar scale (bipolar; default)
-# Output: Ambiguity thresolds
-#         Percentage:    At what percentage the ambiguity (objectivly .50) is valued. Higher number
+# Output: Ambiguity thresholds
+#         Percentage:    At what percentage the ambiguity (objectively .50) is valued. Higher number
 #                        (above 0.50) is ambiguity seeking, lower number (below 0.50) is avoidant.
 #         Bipolar scale: Scale from -1: Highly ambiguity avoidant, 0: Indifferent, to 1: Ambiguity
 #                        seeking.
 # Use: df[,x1] <- recodeEllsDyn(x = df[,x1:x17], args)
+
 recodeEllsDyn <- function(x, output = "bipolar") {
 ambig <- x
 ambig <- ambig[,-c(1:7)]

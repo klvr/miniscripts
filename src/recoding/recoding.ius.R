@@ -6,9 +6,9 @@
 # Short-version (12 item) Intolerance of Uncertainty -----------------------------------------------
 # Input: Columns of responses (x)
 # Arguments: Prospective items (prosp; sequence of; defaults to items 1, 2, 3, 4, 5, 6 & 7)
-#            Inhibatory items (inhib; sequence of; defaults to items 8, 9, 10, 11, 12)
+#            Inhibitory items (inhib; sequence of; defaults to items 8, 9, 10, 11, 12)
 # Output: Summary score for intolerance of uncertainty, and each sub-scale 
-#         (prospective and inhibatory) in that order.
+#         (prospective and inhibitory) in that order.
 # Use: df[,x1:x3] <- recodeIUS(x = df[,x1:x12], args)
 
 recodeIUS <- function(x, prosp = c(1,2,3,4,5,6,7),

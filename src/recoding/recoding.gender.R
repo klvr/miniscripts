@@ -7,6 +7,7 @@
 # Input: Column with gender
 # Output: 1: Female, 0: Male, -1: Other/non-binary, NA: Missing
 # Use: df[,x] <- recodeGender(x = df[,x])
+
 recodeGender <- function(x) {
   x <- sapply(x, as.character)
   x <- sapply(x, toupper)

@@ -9,7 +9,8 @@
 # Input: Column of responses (x)
 # Arguments: Correct response (c; not case sensitive), heuristic response (h; if applicable)
 # Output: 1: Correct, 0: Incorrect, -1: Heuristic (if applicable), NA: No response
-# Use: df[,x] <- recodeSingle(x = df[,x], c = "correct response", h = "heuristic response") 
+# Use: df[,x] <- recodeSingle(x = df[,x], c = "correct response", h = "heuristic response")
+
 recodeSingle <- function(x, c, h = "heuristic") {
   x <- as.character(x)
   x <- toupper(x)
@@ -38,6 +39,7 @@ recodeSingle <- function(x, c, h = "heuristic") {
 # Arguments: Heuristic coding on/off (hc), majority colour (maj; not case sensitive)
 # Output: 1: Correct, 0: Incorrect, -1: Probability matching (if TRUE), NA: No response
 # Use: df[,pm1] <- recodeProbabilityMatching(pm = df[,c(pm1:pm10)], maj = "Blue cup", hc = "FALSE")
+
 recodeProbabilityMatching <- function(pm, maj = "Blue cup", hc = FALSE) {
   maj <- toupper(maj)
   for (i in 1:ncol(pm)) {
