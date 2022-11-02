@@ -5,14 +5,14 @@ To be sourced into other projects when needed.
 
 ## Contents:
 
-    project/
+    miniscripts/
     │   README.md         - ReadMe file.
     │   miniscripts.Rproj - R-project file.
     |   renv.lock         - File for recreating my local R environment via the 'renv'-package.
     │
     └───src/ - Main container in this repository.
     │   │
-    │   └───recoding/ - Contains functions for recoding of questionnaire responses
+    │   └───recoding/ - Contains functions for recoding of questionnaire responses.
     │       recoding.cape.R    - Community Assessment of Psychic Experiences.
     │       recoding.ellsdyn.R - Text-based titration version of Ellsberg/Ambiguity task. 
     │       recoding.fdc.R     - Five Dimensions of (informational) curiosity.
